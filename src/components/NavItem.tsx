@@ -8,7 +8,7 @@ export function NavItem({path, label, ...rest}: ILink) {
     return (
         <Link href={path}
                         padding=' 8px 16px'
-                        borderRadius='10px'
+                        borderRadius='8px'
                         transition='background 1s'
                         border='1px solid transparent'
                         color="#83868A"

@@ -18,9 +18,12 @@ export function Header() {
                 <Link href='/'>E</Link>
 
                 <Flex as='nav'
-                    gap='32px'
+                    gap='16px'
                 >
                     <NavItem path="/" label="Home"/>
+                    <NavItem path="/" label="Stack"/>
+                    <NavItem path="/" label="Portfolio"/>
+                    <NavItem path="/" label="Contato"/>
                 </Flex>
 
             </Flex>
