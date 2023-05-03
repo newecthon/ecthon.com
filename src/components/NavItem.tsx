@@ -4,7 +4,7 @@ interface ILink {
     path: string
     label: string
 }
-export function NavItem({path, label}: ILink) {
+export function NavItem({path, label, ...rest}: ILink) {
     return (
         <Link href={path}
                         padding=' 8px 16px'
@@ -18,6 +18,7 @@ export function NavItem({path, label}: ILink) {
                             border: '1px solid #282828',
                             color: '#F2F2F2'
                         }}
+                        {...rest}
                     >
                         {label}
                     </Link>
