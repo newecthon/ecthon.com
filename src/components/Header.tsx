@@ -22,6 +22,7 @@ export function Header() {
             <Flex as='header'
                 minW='1120px'
                 justifyContent='space-between'
+                align='center'
             >
                 <Link href='/' color='#fff' fontSize='40px'>ecthon</Link>
 
@@ -29,15 +30,22 @@ export function Header() {
                     gap='16px'
                 >
                     {pages.map(item => (
-                        <Link key={item} href={item} color='#fff'
-                            background={item === selectedTab ? "red" : ""}
-                            padding='20px'
-                            textDecor='none'
-                            transition='color 0.3s ease-in-out'
-                            onMouseMove={() => setSelectedTab(item)}
+                        <Link
+                            href={item}
+                            padding=' 8px 16px'
+                            borderRadius='8px'
+                            transition='background 1s'
+                            border='1px solid transparent'
+                            color="#83868A"
+                            _hover={{
+                                textDecor: 'none',
+                                background: '#1A1A1A',
+                                border: '1px solid #282828',
+                                color: '#F2F2F2'
+                            }}
                         >
-                            {item}
-                        </Link>
+                        {item}
+                    </Link>
                     ))}
                     
                 </Flex>
