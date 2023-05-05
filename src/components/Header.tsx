@@ -10,14 +10,10 @@ export function Header() {
             align='center'
             justify='center'
             background='#1C1C1C'
-            borderBottom='1px solid #282828'
         >
             <Flex as='header'
                 minW='1120px'
-                h='100%'
                 justifyContent='space-between'
-                align='center'
-                // borderBottom='1px solid #282828'
             >
                 <Link href='/'>E</Link>
 
