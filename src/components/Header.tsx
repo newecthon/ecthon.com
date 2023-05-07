@@ -34,11 +34,10 @@ export function Header() {
                             key={item}
                             href={item}
                             padding=' 8px 16px'
-                            borderRadius='8px'
-                            transition='background 1s'
+                            borderRadius='10px'
                             border='1px solid transparent'
                             color="#83868A"
-                            transitionDuration='3s'
+                            transition='0.2s'
                             _hover={{
                                 textDecor: 'none',
                                 background: '#1A1A1A',
