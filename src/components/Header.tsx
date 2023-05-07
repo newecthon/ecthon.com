@@ -31,12 +31,14 @@ export function Header() {
                 >
                     {pages.map(item => (
                         <Link
+                            key={item}
                             href={item}
                             padding=' 8px 16px'
                             borderRadius='8px'
                             transition='background 1s'
                             border='1px solid transparent'
                             color="#83868A"
+                            transitionDuration='3s'
                             _hover={{
                                 textDecor: 'none',
                                 background: '#1A1A1A',
