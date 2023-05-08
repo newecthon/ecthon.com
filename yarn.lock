@@ -1008,6 +1008,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.39.0.tgz#58b536bcc843f4cd1e02a7e6171da5c040f4d44b"
   integrity sha512-kf9RB0Fg7NZfap83B3QOqOGg9QmD9yBudqQXzzOtn3i4y7ZUXe5ONeW34Gwi+TxhH4mvj72R1Zc300KUMa9Bng==
 
+"@fontsource/bai-jamjuree@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/bai-jamjuree/-/bai-jamjuree-4.5.9.tgz#2afd87852d018be97ce98cd74a91f89393ac2a6c"
+  integrity sha512-k+niRXYmS3SBWSN6E7iRiLb3wozy85Vdaiy+QR8oSwGN3HA49tTCEsKGm4yD0B7jmURT8V8p8ApYcLtBB9zOvg==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -1038,6 +1043,11 @@
   integrity sha512-YHugXBtXWVUjSMRirZPxDlDn3LvYpuCqaRlIHgKA52Q6PVtYtmFjhzYQ8LuN9mKCKF5NOZcrf3jya2uL8WQwuw==
   dependencies:
     glob "7.1.7"
+
+"@next/font@^13.4.1":
+  version "13.4.1"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.4.1.tgz#bbb279d017efc631e804b7a4fc66eb77e86b9b8e"
+  integrity sha512-GIgdVNXhWgGq92NUSGVd4n2yiF1k0i6U3dt/Pa9SFJvOEJyAJ99khXVq6cYJYJS8jhbL0yjE8+th8h+KjIGzuA==
 
 "@next/swc-darwin-arm64@13.3.2":
   version "13.3.2"
