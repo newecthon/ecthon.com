@@ -11,7 +11,8 @@ const theme = extendTheme({
     },
     // colors
     colors: {
-        bggray: '#161616'
+        bggray: '#161616',
+        cardbg: '#282828'
     },
     // external fonts
     fonts: {

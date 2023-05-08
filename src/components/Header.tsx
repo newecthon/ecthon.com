@@ -24,7 +24,7 @@ export function Header() {
                 justifyContent='space-between'
                 align='center'
             >
-                <Link href='/' color='#fff' fontSize='40px'>ecthon</Link>
+                <Link href='/' color='#fff' fontSize='40px'>e.</Link>
 
                 <Flex as='nav'
                     gap='16px'
