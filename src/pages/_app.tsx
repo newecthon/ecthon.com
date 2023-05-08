@@ -1,17 +1,13 @@
+import '@fontsource/bai-jamjuree'
+
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
-
-import { Roboto } from '@next/font/google'
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: '300',
-})
+import theme from '@/theme/theme'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component  {...pageProps} />
     </ChakraProvider>
   )
