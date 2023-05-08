@@ -24,7 +24,7 @@ const projetos = [
     }
 ]
 
-export function Heading() {
+export function Projects() {
     const [ isSelected, setIsSelected] = useState(false)
 
     function handleEffect() {
