@@ -1,5 +1,5 @@
 import { Divider, Flex, Image, Link, Text } from "@chakra-ui/react";
-import { ArrowSquareOut } from "@phosphor-icons/react";
+import { ArrowDownRight, ArrowSquareOut } from "@phosphor-icons/react";
 import { color } from "framer-motion";
 import { useState } from "react";
 
@@ -37,13 +37,19 @@ export function Projects() {
             margin='0 auto'
             direction='column'
         >
-            <Text
-                fontSize='24px'
-                color='#fff'
+            <Flex
+                gap='4px'
+                alignItems='center'
                 mb='32px'
             >
-                PROJETOS
-            </Text>
+                <Text
+                    fontSize='24px'
+                    color='#fff'
+                >
+                    PROJETOS
+                </Text>
+                <ArrowDownRight color='#fff' size={32} />
+            </Flex>
             
             <Flex
                 w='100%'
