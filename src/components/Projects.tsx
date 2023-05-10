@@ -1,7 +1,7 @@
-import { Divider, Flex, Image, Link, Text } from "@chakra-ui/react";
+import { Flex, Image, Link, Text } from "@chakra-ui/react";
 import { ArrowDownRight, ArrowSquareOut } from "@phosphor-icons/react";
-import { color } from "framer-motion";
 import { useState } from "react";
+import { Divider } from "./Divider";
 
 const projetos = [
     {
@@ -113,7 +113,7 @@ export function Projects() {
                                 color="#83868A"
                             >
                                 <Text fontSize='14px'>{projet.type}</Text>
-                                <Flex w='4px' h='1' borderRadius='50px' bg='#83868A'/>
+                                <Divider width="4px" height="4px"/>
                                 <Text fontSize='14px'>{projet.stack}</Text>
                             </Flex>
 

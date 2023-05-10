@@ -1,6 +1,7 @@
 import { Flex, Text } from "@chakra-ui/react";
 
 import { Socials } from "./Socials";
+import { Divider } from "./Divider";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -14,7 +15,16 @@ export function Footer() {
             align='center'
             justify='space-between'
         >
-            <Text color='#83868A'>{currentYear} - Code with ❤️ by <Text as='span' color='#FFF'>Ecthon</Text>.</Text>
+            <Flex
+                align='center'
+                gap='8px'
+            >
+                <Text color='#83868A'>{currentYear}</Text>
+                <Divider width="4px" height="4px" />
+                <Text color='#83868A'>
+                    Code with ❤️ by <Text as='span' color='#FFF'>Ecthon</Text>.
+                </Text>
+            </Flex>
             <Socials />
         </Flex>
     )
