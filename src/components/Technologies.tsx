@@ -4,7 +4,7 @@ export function Technologies() {
     return (
         <Flex>
             <Flex
-                padding='6px 8px'
+                padding='12px 16px'
                 background='purple'
                 borderRadius='full'
                 gap='8px'
@@ -12,8 +12,8 @@ export function Technologies() {
             >
                 <Image
                     src="https://github.com/ecthon-b.png"
-                    w='32px'
-                    h='32px'
+                    w='24px'
+                    h='24px'
                     borderRadius='full'
                 />
                 <Text
