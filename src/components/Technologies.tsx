@@ -2,10 +2,15 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 
 export function Technologies() {
     return (
-        <Flex>
+        <Flex
+            w='1120px'
+            margin='0 auto'
+            gap='10px'
+            mb='64px'
+        >
             <Flex
                 padding='12px 16px'
-                background='purple'
+                background='#282828'
                 borderRadius='full'
                 gap='8px'
                 align='center'
@@ -19,8 +24,9 @@ export function Technologies() {
                 <Text
                     fontWeight='semibold'
                     color='#fff'
+                    fontSize='14px'
                 >
-                    Ecthon
+                    Next.js
                 </Text>
             </Flex>
         </Flex>
