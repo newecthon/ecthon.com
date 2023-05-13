@@ -1,5 +1,19 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 
+const techs = [
+    {name: 'Next.hs', img: ''},
+    {name: 'TypeScript', img: ''},
+    {name: 'React.js', img: ''},
+    {name: 'Vercel', img: ''},
+    {name: 'Chakra UI', img: ''},
+    {name: 'Sass', img: ''},
+    {name: 'Styled Component', img: ''},
+    {name: 'HTML5', img: ''},
+    {name: 'CSS3', img: ''},
+    {name: 'Git', img: ''},
+    {name: 'Figma', img: ''},
+]
+
 export function Technologies() {
     return (
         <Flex
