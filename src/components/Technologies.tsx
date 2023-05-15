@@ -22,27 +22,31 @@ export function Technologies() {
             gap='10px'
             mb='64px'
         >
-            <Flex
-                padding='12px 16px'
-                background='#282828'
-                borderRadius='full'
-                gap='8px'
-                align='center'
-            >
-                <Image
-                    src="https://github.com/ecthon-b.png"
-                    w='24px'
-                    h='24px'
+                {techs.map(item => (
+                    <Flex
+                    key={item.name}
+                    padding='12px 16px'
+                    background='#282828'
                     borderRadius='full'
-                />
-                <Text
-                    fontWeight='semibold'
-                    color='#fff'
-                    fontSize='14px'
+                    gap='8px'
+                    align='center'
                 >
-                    Next.js
-                </Text>
-            </Flex>
+                    <Image
+                        src="https://github.com/ecthon-b.png"
+                        alt=""
+                        w='24px'
+                        h='24px'
+                        borderRadius='full'
+                    />
+                    <Text
+                        fontWeight='semibold'
+                        color='#fff'
+                        fontSize='14px'
+                    >
+                        Next.js
+                    </Text>
+                </Flex>
+                ))}
         </Flex>
     )
 }
