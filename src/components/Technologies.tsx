@@ -21,15 +21,22 @@ export function Technologies() {
             margin='0 auto'
             gap='10px'
             mb='64px'
+            // className="animation"
+            overflow='hidden'
+            transform='0, 0, 0'
+            bg='red'
         >
                 {techs.map(item => (
                     <Flex
                     key={item.name}
-                    padding='12px 16px'
+                    minW='100px'
+                    // padding='12px 16px'
                     background='#282828'
                     borderRadius='full'
                     gap='8px'
                     align='center'
+                    justifyContent='center'
+                    // className="animation"
                 >
                     <Image
                         src="https://github.com/ecthon-b.png"
@@ -39,11 +46,12 @@ export function Technologies() {
                         borderRadius='full'
                     />
                     <Text
+                        w='auto'
                         fontWeight='semibold'
                         color='#fff'
                         fontSize='14px'
                     >
-                        Next.js
+                        {item.name}
                     </Text>
                 </Flex>
                 ))}

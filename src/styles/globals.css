@@ -17,3 +17,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.animation {
+  animation: carouselAnimation 20s linear infinite;
+  /* animation-duration: 150s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: carouselAnimation; */
+}
+
+@keyframes carouselAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(100% - 100vw)); }
+}
