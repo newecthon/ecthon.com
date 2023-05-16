@@ -2,8 +2,8 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 import { useKeenSlider } from 'keen-slider/react'
 
 
-const techs = [
-    {name: 'Next.hs', img: ''},
+const originalArray = [
+    {name: 'Next.js', img: ''},
     {name: 'TypeScript', img: ''},
     {name: 'React.js', img: ''},
     {name: 'Vercel', img: ''},
@@ -14,6 +14,28 @@ const techs = [
     {name: 'CSS3', img: ''},
     {name: 'Git', img: ''},
     {name: 'Figma', img: ''},
+    {name: 'Next.js', img: ''},
+    {name: 'TypeScript', img: ''},
+    {name: 'React.js', img: ''},
+    {name: 'Vercel', img: ''},
+    {name: 'Chakra UI', img: ''},
+    {name: 'Sass', img: ''},
+    {name: 'Styled Component', img: ''},
+    {name: 'HTML5', img: ''},
+    {name: 'CSS3', img: ''},
+    {name: 'Git', img: ''},
+    // {name: 'Figma', img: ''},
+    // {name: 'Next.js', img: ''},
+    // {name: 'TypeScript', img: ''},
+    // {name: 'React.js', img: ''},
+    // {name: 'Vercel', img: ''},
+    // {name: 'Chakra UI', img: ''},
+    // {name: 'Sass', img: ''},
+    // {name: 'Styled Component', img: ''},
+    // {name: 'HTML5', img: ''},
+    // {name: 'CSS3', img: ''},
+    // {name: 'Git', img: ''},
+    // {name: 'Figma', img: ''},
 ]
 
 const animation = { duration: 5000, easing: (t: number) => t }
@@ -39,41 +61,39 @@ export function Technologies() {
         <Flex
             w='1120px'
             margin='0 auto'
-            gap='10px'
+            mt='64px'
             mb='64px'
-            // className="animation"
+            className="mask"
             overflow='hidden'
-            transform='0, 0, 0'
-            bg='red'
         >
-                {techs.map(item => (
+                {techs.map((item, index) => (
                     <Flex
-                    key={item.name}
-                    minW='100px'
-                    // padding='12px 16px'
-                    background='#282828'
-                    borderRadius='full'
-                    gap='8px'
-                    align='center'
-                    justifyContent='center'
-                    // className="animation"
-                >
-                    <Image
-                        src="https://github.com/ecthon-b.png"
-                        alt=""
-                        w='24px'
-                        h='24px'
+                        key={index}
+                        flex='none'
+                        padding='12px 16px'
+                        background='#282828'
                         borderRadius='full'
-                    />
-                    <Text
-                        w='auto'
-                        fontWeight='semibold'
-                        color='#fff'
-                        fontSize='14px'
+                        gap='8px'
+                        align='center'
+                        className="animation"
+                        mr='16px'
                     >
-                        {item.name}
-                    </Text>
-                </Flex>
+                        <Image
+                            src="https://github.com/ecthon-b.png"
+                            alt=""
+                            w='24px'
+                            h='24px'
+                            borderRadius='full'
+                        />
+                        <Text
+                            fontWeight='semibold'
+                            color='#fff'
+                            fontSize='14px'
+                            align='center'
+                        >
+                            {item.name} - {index}
+                        </Text>
+                    </Flex>
                 ))}
         </Flex>
     )
