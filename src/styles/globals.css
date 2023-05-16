@@ -21,9 +21,9 @@ a {
 }
 
 .animation {
-  animation: carouselAnimation 40s 0s ease infinite normal;
+  animation: carouselAnimation 20s linear 0s infinite normal;
 }
 
 @keyframes carouselAnimation {
-  100% { transform: translateX(-40vw); }
+  100% { transform: translateX(-150vw); }
 }

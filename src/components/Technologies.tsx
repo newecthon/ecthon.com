@@ -1,6 +1,6 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 
-const techs = [
+const originalArray = [
     {name: 'Next.js', img: ''},
     {name: 'TypeScript', img: ''},
     {name: 'React.js', img: ''},
@@ -12,7 +12,32 @@ const techs = [
     {name: 'CSS3', img: ''},
     {name: 'Git', img: ''},
     {name: 'Figma', img: ''},
+    {name: 'Next.js', img: ''},
+    {name: 'TypeScript', img: ''},
+    {name: 'React.js', img: ''},
+    {name: 'Vercel', img: ''},
+    {name: 'Chakra UI', img: ''},
+    {name: 'Sass', img: ''},
+    {name: 'Styled Component', img: ''},
+    {name: 'HTML5', img: ''},
+    {name: 'CSS3', img: ''},
+    {name: 'Git', img: ''},
+    // {name: 'Figma', img: ''},
+    // {name: 'Next.js', img: ''},
+    // {name: 'TypeScript', img: ''},
+    // {name: 'React.js', img: ''},
+    // {name: 'Vercel', img: ''},
+    // {name: 'Chakra UI', img: ''},
+    // {name: 'Sass', img: ''},
+    // {name: 'Styled Component', img: ''},
+    // {name: 'HTML5', img: ''},
+    // {name: 'CSS3', img: ''},
+    // {name: 'Git', img: ''},
+    // {name: 'Figma', img: ''},
 ]
+
+const techs = [...originalArray]
+console.log("ARRAY", techs)
 
 export function Technologies() {
     return (
@@ -24,9 +49,9 @@ export function Technologies() {
             className="mask"
             overflow='hidden'
         >
-                {techs.map(item => (
+                {techs.map((item, index) => (
                     <Flex
-                        key={item.name}
+                        key={index}
                         flex='none'
                         padding='12px 16px'
                         background='#282828'
@@ -36,21 +61,21 @@ export function Technologies() {
                         className="animation"
                         mr='16px'
                     >
-                    <Image
-                        src="https://github.com/ecthon-b.png"
-                        alt=""
-                        w='24px'
-                        h='24px'
-                        borderRadius='full'
-                    />
-                    <Text
-                        fontWeight='semibold'
-                        color='#fff'
-                        fontSize='14px'
-                        align='center'
-                    >
-                        {item.name}
-                    </Text>
+                        <Image
+                            src="https://github.com/ecthon-b.png"
+                            alt=""
+                            w='24px'
+                            h='24px'
+                            borderRadius='full'
+                        />
+                        <Text
+                            fontWeight='semibold'
+                            color='#fff'
+                            fontSize='14px'
+                            align='center'
+                        >
+                            {item.name} - {index}
+                        </Text>
                     </Flex>
                 ))}
         </Flex>
