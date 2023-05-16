@@ -1,4 +1,6 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
+import { useKeenSlider } from 'keen-slider/react'
+
 
 const techs = [
     {name: 'Next.hs', img: ''},
@@ -14,7 +16,25 @@ const techs = [
     {name: 'Figma', img: ''},
 ]
 
+const animation = { duration: 5000, easing: (t: number) => t }
+
 export function Technologies() {
+
+    const [sliderRef] = useKeenSlider<HTMLDivElement>({
+        loop: true,
+        renderMode: 'performance',
+        drag: false,
+        created(s) {
+            s.moveToIdx(5, true, animation)
+        },
+        updated(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
+        },
+        animationEnded(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation )
+        }
+    })
+
     return (
         <Flex
             w='1120px'
