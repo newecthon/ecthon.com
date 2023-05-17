@@ -27,3 +27,10 @@ a {
 @keyframes carouselAnimation {
   100% { transform: translateX(-150vw); }
 } */
+
+.myclass {
+    min-width: 200px !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: row !important
+}

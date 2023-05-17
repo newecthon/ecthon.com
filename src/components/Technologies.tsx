@@ -2,23 +2,9 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { double } from "./techs";
 
-
-const techs = [
-    {name: 'Next.js', img: ''},
-    {name: 'TypeScript', img: ''},
-    {name: 'React.js', img: ''},
-    {name: 'Vercel', img: ''},
-    {name: 'Chakra UI', img: ''},
-    {name: 'Sass', img: ''},
-    {name: 'Styled Component', img: ''},
-    {name: 'HTML5', img: ''},
-    {name: 'CSS3', img: ''},
-    {name: 'Git', img: ''},
-    {name: 'Figma', img: ''},
-]
-
-const animation = { duration: 70000, easing: (t: number) => t }
+const animation = { duration: 50000, easing: (t: number) => t }
 
 export function Technologies() {
 
@@ -41,7 +27,7 @@ export function Technologies() {
     return (
         <Flex
             ref={sliderRef}
-            maxW='100%'
+            maxW='1120px'
             margin='0 auto'
             mt='64px'
             mb='64px'
@@ -49,16 +35,16 @@ export function Technologies() {
             className="mask"
             overflow='hidden'
         >
-                {techs.map((item, index) => (
+                {double.map((item, index) => (
                     <Flex
                         key={index}
-                        maxW='200px'
-                        padding='12px 16px'
+                        // maxW='200px'
+                        // padding='12px 16px'
                         background='#282828'
-                        borderRadius='full'
+                        // borderRadius='full'
                         gap='8px'
-                        align='center'
-                        className="keen-slider__slide"
+                        // align='center'
+                        className="myclass keen-slider__slide"
                     >
                         <Image
                             src="https://github.com/ecthon-b.png"
