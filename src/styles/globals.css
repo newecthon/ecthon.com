@@ -29,7 +29,7 @@ a {
 } */
 
 .myclass {
-    min-width: 200px !important;
+    min-width: auto !important;
     overflow-x: hidden !important;
     display: flex !important;
     flex-direction: row !important

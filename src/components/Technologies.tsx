@@ -48,7 +48,7 @@ export function Technologies() {
                         // className="animation"
                     >
                         <Image
-                            src="https://github.com/ecthon-b.png"
+                            src={item.img}
                             alt=""
                             w='24px'
                             h='24px'
@@ -60,7 +60,7 @@ export function Technologies() {
                             fontSize='14px'
                             align='center'
                         >
-                            {item.name} - {index}
+                            {item.name}
                         </Text>
                     </Flex>
                 ))}
