@@ -34,4 +34,4 @@ export const techs = [
     {name: 'Figma', img: ''},
 ]
 
-export const double = [...techs, ...techs, ...techs];
+export const double = [...techs, ...techs, ...techs, ...techs, ...techs];

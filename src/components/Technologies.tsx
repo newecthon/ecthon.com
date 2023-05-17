@@ -38,13 +38,14 @@ export function Technologies() {
                 {double.map((item, index) => (
                     <Flex
                         key={index}
-                        // maxW='200px'
-                        // padding='12px 16px'
+                        flex='none'
+                        padding='12px 16px'
                         background='#282828'
-                        // borderRadius='full'
+                        borderRadius='full'
                         gap='8px'
-                        // align='center'
+                        align='center'
                         className="myclass keen-slider__slide"
+                        // className="animation"
                     >
                         <Image
                             src="https://github.com/ecthon-b.png"
