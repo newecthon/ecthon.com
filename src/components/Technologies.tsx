@@ -4,7 +4,7 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import { double } from "./techs";
 
-const animation = { duration: 50000, easing: (t: number) => t }
+const animation = { duration: 89999, easing: (t: number) => t }
 
 export function Technologies() {
 
