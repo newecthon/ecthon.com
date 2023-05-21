@@ -1,55 +1,41 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 
-const originalArray = [
-    {name: 'Next.js', img: ''},
-    {name: 'TypeScript', img: ''},
-    {name: 'React.js', img: ''},
-    {name: 'Vercel', img: ''},
-    {name: 'Chakra UI', img: ''},
-    {name: 'Sass', img: ''},
-    {name: 'Styled Component', img: ''},
-    {name: 'HTML5', img: ''},
-    {name: 'CSS3', img: ''},
-    {name: 'Git', img: ''},
-    {name: 'Figma', img: ''},
-    {name: 'Next.js', img: ''},
-    {name: 'TypeScript', img: ''},
-    {name: 'React.js', img: ''},
-    {name: 'Vercel', img: ''},
-    {name: 'Chakra UI', img: ''},
-    {name: 'Sass', img: ''},
-    {name: 'Styled Component', img: ''},
-    {name: 'HTML5', img: ''},
-    {name: 'CSS3', img: ''},
-    {name: 'Git', img: ''},
-    // {name: 'Figma', img: ''},
-    // {name: 'Next.js', img: ''},
-    // {name: 'TypeScript', img: ''},
-    // {name: 'React.js', img: ''},
-    // {name: 'Vercel', img: ''},
-    // {name: 'Chakra UI', img: ''},
-    // {name: 'Sass', img: ''},
-    // {name: 'Styled Component', img: ''},
-    // {name: 'HTML5', img: ''},
-    // {name: 'CSS3', img: ''},
-    // {name: 'Git', img: ''},
-    // {name: 'Figma', img: ''},
-]
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
+import { double } from "./techs";
 
-const techs = [...originalArray]
-console.log("ARRAY", techs)
+const animation = { duration: 89999, easing: (t: number) => t }
 
 export function Technologies() {
+
+    const [sliderRef] = useKeenSlider<HTMLDivElement>({
+        loop: true,
+        renderMode: "performance",
+        drag: false,
+
+        created(s) {
+          s.moveToIdx(5, true, animation)
+        },
+        updated(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation)
+        },
+        animationEnded(s) {
+          s.moveToIdx(s.track.details.abs + 5, true, animation)
+        },
+      })
+
     return (
         <Flex
-            w='1120px'
+            ref={sliderRef}
+            maxW='1120px'
             margin='0 auto'
             mt='64px'
             mb='64px'
+            gap='16px'
             className="mask"
             overflow='hidden'
         >
-                {techs.map((item, index) => (
+                {double.map((item, index) => (
                     <Flex
                         key={index}
                         flex='none'
@@ -58,11 +44,11 @@ export function Technologies() {
                         borderRadius='full'
                         gap='8px'
                         align='center'
-                        className="animation"
-                        mr='16px'
+                        className="myclass keen-slider__slide"
+                        // className="animation"
                     >
                         <Image
-                            src="https://github.com/ecthon-b.png"
+                            src={item.img}
                             alt=""
                             w='24px'
                             h='24px'
@@ -74,7 +60,7 @@ export function Technologies() {
                             fontSize='14px'
                             align='center'
                         >
-                            {item.name} - {index}
+                            {item.name}
                         </Text>
                     </Flex>
                 ))}
