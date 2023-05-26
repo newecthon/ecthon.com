@@ -1,5 +1,6 @@
 'use client'
 
+import { About } from '@/components/About'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Heading } from '@/components/Heading'
@@ -13,6 +14,7 @@ export default function Home() {
       <Heading />
       <Projects />
       <Technologies />
+      <About />
       <Footer />
     </>
   )
